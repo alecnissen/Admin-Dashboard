@@ -1,0 +1,11 @@
+.layout-container { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+} 
+
+.sidebar-container { 
+    display: grid;
+    background: steelblue;
+    color: white; 
+    justify-items: center;
+} 
