@@ -20,11 +20,12 @@
     /* display: grid; */
     display: flex;
     flex-direction: column;
-    background: steelblue; 
+    background: rgb(69, 156, 228); 
     color: white; 
      font-family: 'Roboto'; 
      height: 100vh; 
-     width: 35vh; 
+     width: auto; 
+     font-size: 20px;
 }  
 
 .dashboard-container { 
@@ -45,6 +46,7 @@
     display: flex; 
     margin-left: 20px; 
     margin-top: 12px; 
+    font-size: 25px; 
 } 
 
 #home-logo { 
@@ -56,7 +58,7 @@
 .home-container { 
     display: flex; 
     /* margin-bottom: 20px; */
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 .home-text { 
@@ -66,7 +68,7 @@
 .profile-container { 
     display: flex;
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
 }
 
 #profile-img { 
@@ -82,7 +84,7 @@
     display: flex;
     vertical-align: middle;
     /* margin-top: 20px;  */
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 #message-logo { 
@@ -96,7 +98,7 @@
 .history-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
 }  
 
 .history-text { 
@@ -110,7 +112,7 @@
 .tasks-container { 
     display: flex;
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 .tasks-text { 
@@ -124,7 +126,7 @@
 .communities-container { 
     display: flex; 
     vertical-align: middle; 
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 .communities-text { 
@@ -138,7 +140,7 @@
 .settings-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
     margin-top: 50px; 
 } 
 
@@ -153,7 +155,7 @@
 .support-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 .support-text { 
@@ -167,7 +169,7 @@
 .privacy-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 5px; 
+    padding: 8px; 
 } 
 
 .privacy-text { 
