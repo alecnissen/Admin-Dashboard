@@ -1,4 +1,7 @@
-
+* { 
+    padding: 0; 
+    margin: 0; 
+}
 
 
 @font-face {
@@ -14,10 +17,14 @@
 } 
 
  .sidebar-container { 
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
     background: steelblue; 
     color: white; 
      font-family: 'Roboto'; 
+     height: 100vh; 
+     width: 35vh; 
 }  
 
 .dashboard-container { 
@@ -27,10 +34,17 @@
 
  #header-img { 
     vertical-align: middle; 
+    height: 50px; 
+    width: 50px; 
 }   
 
 .header-text { 
-    margin-left: 30px; 
+    /* display: flex;
+    justify-content: flex-start; */
+    /* margin-left: 30px;  */ 
+    display: flex; 
+    margin-left: 20px; 
+    margin-top: 12px; 
 } 
 
 #home-logo { 
@@ -41,7 +55,8 @@
 
 .home-container { 
     display: flex; 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding: 5px; 
 } 
 
 .home-text { 
@@ -51,7 +66,7 @@
 .profile-container { 
     display: flex;
     vertical-align: middle;
-
+    padding: 5px; 
 }
 
 #profile-img { 
@@ -66,7 +81,8 @@
 .messages-container { 
     display: flex;
     vertical-align: middle;
-    margin-top: 20px; 
+    /* margin-top: 20px;  */
+    padding: 5px; 
 } 
 
 #message-logo { 
@@ -75,4 +91,89 @@
 
 .message-text { 
     margin-left: 40px; 
+} 
+
+.history-container { 
+    display: flex; 
+    vertical-align: middle;
+    padding: 5px; 
+}  
+
+.history-text { 
+    margin-left: 40px; 
+} 
+
+#history-img { 
+    margin-left: 12px; 
+} 
+
+.tasks-container { 
+    display: flex;
+    vertical-align: middle;
+    padding: 5px; 
+} 
+
+.tasks-text { 
+    margin-left: 40px; 
+} 
+
+#tasks-img { 
+    margin-left: 12px; 
+}
+
+.communities-container { 
+    display: flex; 
+    vertical-align: middle; 
+    padding: 5px; 
+} 
+
+.communities-text { 
+  margin-left: 40px; 
+} 
+
+#communities-img { 
+    margin-left: 12px; 
+} 
+
+.settings-container { 
+    display: flex; 
+    vertical-align: middle;
+    padding: 5px; 
+    margin-top: 50px; 
+} 
+
+.settings-text { 
+    margin-left: 40px; 
+} 
+
+#settings-img { 
+    margin-left: 12px; 
+} 
+
+.support-container { 
+    display: flex; 
+    vertical-align: middle;
+    padding: 5px; 
+} 
+
+.support-text { 
+    margin-left: 40px; 
+} 
+
+#support-img { 
+    margin-left: 12px; 
+} 
+
+.privacy-container { 
+    display: flex; 
+    vertical-align: middle;
+    padding: 5px; 
+} 
+
+.privacy-text { 
+    margin-left: 40px; 
+} 
+
+#privacy-img { 
+    margin-left: 12px; 
 }
