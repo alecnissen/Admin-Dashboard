@@ -25,18 +25,18 @@
      font-family: 'Roboto'; 
      height: 100vh; 
      width: auto; 
-     font-size: 20px;
+     font-size: 1.3em;
 }  
 
 .dashboard-container { 
     display: flex; 
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 } 
 
  #header-img { 
     vertical-align: middle; 
-    height: 50px; 
-    width: 50px; 
+    height: 3.1em; 
+    width: 3.1em; 
 }   
 
 .header-text { 
@@ -44,138 +44,165 @@
     justify-content: flex-start; */
     /* margin-left: 30px;  */ 
     display: flex; 
-    margin-left: 20px; 
-    margin-top: 12px; 
-    font-size: 25px; 
+    margin-left: 1em; 
+    margin-top: 0.75em; 
+    font-size: 1.4em; 
 } 
 
 #home-logo { 
     vertical-align: middle;
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 }
 
 
 .home-container { 
     display: flex; 
     /* margin-bottom: 20px; */
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 .home-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 .profile-container { 
     display: flex;
     vertical-align: middle;
-    padding: 8px; 
+    padding: 0.5em; 
 }
 
 #profile-img { 
     vertical-align: middle;
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .profile-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 }
 
 .messages-container { 
     display: flex;
     vertical-align: middle;
     /* margin-top: 20px;  */
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 #message-logo { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .message-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 .history-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 8px; 
+    padding: 0.5em; 
 }  
 
 .history-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 #history-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .tasks-container { 
     display: flex;
     vertical-align: middle;
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 .tasks-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 #tasks-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 }
 
 .communities-container { 
     display: flex; 
     vertical-align: middle; 
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 .communities-text { 
-  margin-left: 40px; 
+  margin-left: 2.5em; 
 } 
 
 #communities-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .settings-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 8px; 
-    margin-top: 50px; 
+    padding: 0.5em; 
+    margin-top: 3.1em; 
 } 
 
 .settings-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 #settings-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .support-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 .support-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 #support-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
 } 
 
 .privacy-container { 
     display: flex; 
     vertical-align: middle;
-    padding: 8px; 
+    padding: 0.5em; 
 } 
 
 .privacy-text { 
-    margin-left: 40px; 
+    margin-left: 2.5em; 
 } 
 
 #privacy-img { 
-    margin-left: 12px; 
+    margin-left: 0.75em; 
+} 
+
+.header-container { 
+    display: grid; 
+    grid-template-columns: 4fr 2fr;
+} 
+
+.header-input-box-col-1 { 
+    background-color: rgb(250, 223, 223);
+    width: 30em; 
+    /* border-radius: 5%; */
+} 
+
+.header-logo { 
+    height: 2px; 
+    width: 2px; 
+} 
+
+#header-logo { 
+    height: 70px; 
+    width: 70px; 
+    border-radius: 50%; 
+} 
+
+.logo-title-container-for-header { 
+    display: grid; 
+
 }
