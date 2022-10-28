@@ -29,7 +29,7 @@ body {
     "nav main sidebar"
     "nav footer footer";
     grid-template-columns: 1.5fr 5fr 2fr;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr;
     height: 100vh;
 } 
 
@@ -40,6 +40,8 @@ nav {
 
 header { 
     grid-area: header; 
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
 } 
 
 main { 
@@ -50,11 +52,42 @@ main {
 
 sidebar { 
     grid-area: sidebar; 
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
 } 
 
 footer { 
     grid-area: footer; 
 }
 
+.nav-container { 
+    background-color: skyblue; 
+    width: auto; 
+    height: 100vh; 
+}  
 
+.nav-img-text-container { 
+    display: flex; 
+    /* margin-bottom: 2em;  */
+}
 
+.header-text { 
+    font-size: 5em; 
+    /* padding: 0.2em;  */
+    font-family: 'Roboto';
+    color: white; 
+} 
+
+#header-img { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+    width: 8em; 
+    height: 8em; 
+} 
+
+.home-img-and-text { 
+    display: flex; 
+    justify-content: center;
+    gap: 2em; 
+}
