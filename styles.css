@@ -43,22 +43,28 @@ header {
     display: grid; 
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
+ 
 } 
 
 main { 
     grid-area: main; 
     display: grid; 
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr;  */
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    background-color: rgb(235, 224, 224);
 } 
 
 sidebar { 
     grid-area: sidebar; 
     display: grid; 
     grid-template-rows: 1fr 1fr;
+    background-color: rgb(235, 224, 224);
 } 
 
 footer { 
     grid-area: footer; 
+    background-color: rgb(235, 224, 224);
 }
 
 .nav-container { 
@@ -230,10 +236,27 @@ footer {
     color: rgb(255, 255, 255); 
     font-weight: bold;
     font-family: 'Roboto';
+    font-size: 0.8em;
     border-radius: 17px 20px 17px 20px;  
     height: 4em; 
     width: 7em; 
     border: none; 
+} 
+
+.card-1-main-content-container { 
+    display: grid; 
+    grid-row: 1;
+    grid-column: 1; 
+}
+
+
+.card-1-main-content { 
+    background-color: white;
+    height: auto-fit; 
+    width: auto-fit; 
+    padding: 2em;
+    border-radius: 12%; 
+    margin: 2em; 
 }
 
 
