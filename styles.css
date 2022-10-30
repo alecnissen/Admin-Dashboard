@@ -42,6 +42,7 @@ header {
     grid-area: header; 
     display: grid; 
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 } 
 
 main { 
@@ -61,7 +62,7 @@ footer {
 }
 
 .nav-container { 
-    background-color: skyblue; 
+    background-color: rgb(86, 179, 216); 
     width: auto; 
     height: 100vh; 
 }  
@@ -142,4 +143,98 @@ footer {
     margin-left: 1em; 
     font-family: 'Roboto';
 }
+
+/* Code for header below, top left */ 
+
+.top-header-container-left { 
+    display: flex; 
+    gap: 1.5em; 
+    margin-top: 1em; 
+}
+
+.header-input-field { 
+    height: 2em; 
+    width: 40em; 
+    border-radius: 17px 20px 17px 20px;
+    background-color: rgb(243, 221, 221); 
+    border: none;
+    display: grid;
+    
+} 
+
+
+#header-top-glass-img { 
+    width: 2em; 
+    height: 2em; 
+} 
+
+/* Code for header below, top right */ 
+
+
+.top-header-container-right { 
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 1em; 
+}
+
+.top-right-header-img { 
+    height: 3em; 
+    width: 3em; 
+    border-radius: 50%;
+} 
+
+.top-right-header-bell-icon { 
+    width: 2em; 
+    height: 2em; 
+} 
+
+.top-right-header-text { 
+    font-size: 1.5em;
+    font-family: 'Roboto';
+} 
+
+/* bottom header left code */
+
+.bottom-header-container-left { 
+    display: flex; 
+    grid-column: 1; 
+    grid-row: 2;  
+    /* align-items: center; */
+} 
+
+
+.bottom-left-header-img { 
+    height: 4.5em; 
+    width: 4.5em; 
+    border-radius: 50%;
+}  
+
+.bottom-header-text-1 { 
+    font-family: 'Roboto';
+}
+
+.bottom-header-text-2 { 
+    font-size: 1.5em; 
+    font-family: 'Roboto';
+}  
+
+.bottom-header-right-container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+} 
+
+.bottom-header-right-container > button { 
+    background-color: rgb(86, 179, 216);
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    font-family: 'Roboto';
+    border-radius: 17px 20px 17px 20px;  
+    height: 4em; 
+    width: 7em; 
+    border: none; 
+}
+
+
 
