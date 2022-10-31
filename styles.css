@@ -6,7 +6,7 @@
 :root { 
     --background-color-for-nav:  rgb(86, 179, 216);
     --background-color-for-main-sidebar-footer: rgb(235, 224, 224); 
-
+    --universal-font-family-roboto: 'Roboto'; 
 }
 
 
@@ -104,9 +104,10 @@ footer {
 
 
 .nav-img-text-container > h4 { 
-    font-size: 2.5em; 
+    font-size: 2.49rem; 
     /* padding: 0.2em;  */
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
+    font-family: var(--universal-font-family-roboto);
     color: white; 
 }
 
@@ -134,7 +135,8 @@ footer {
     gap: 2em; 
     padding: 0.5em; 
     margin-left: 1em; 
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
+    font-family: var(--universal-font-family-roboto);
 } 
 
 #home-img, 
@@ -159,7 +161,7 @@ footer {
 .settings-text,
 .support-text, 
 .privacy-text { 
-    font-size: 2em;
+    font-size: 1.99rem;
     color: white; 
 } 
 
@@ -172,7 +174,8 @@ footer {
     padding: 0.5em; 
     margin-top: 4em; 
     margin-left: 1em; 
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
+    font-family: var(--universal-font-family-roboto);
 }
 
 /* Code for header below, top left */ 
@@ -220,7 +223,7 @@ footer {
 } 
 
 .top-right-header-text { 
-    font-size: 1.5em;
+    font-size: 1.49rem;
     font-family: 'Roboto';
 } 
 
@@ -245,7 +248,7 @@ footer {
 }
 
 .bottom-header-text-2 { 
-    font-size: 1.5em; 
+    font-size: 1.49rem; 
     font-family: 'Roboto';
 }  
 
@@ -261,12 +264,14 @@ footer {
     color: rgb(255, 255, 255); 
     font-weight: bold;
     font-family: 'Roboto';
-    font-size: 0.8em;
+    font-size: 0.89rem;
     border-radius: 17px 20px 17px 20px;  
     height: 4em; 
     width: 7em; 
     border: none; 
 } 
+
+/* main content section, card section begins here */ 
 
 .card-1-main-content-container { 
     display: grid; 
