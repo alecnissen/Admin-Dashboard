@@ -186,7 +186,7 @@ footer {
     margin-top: 1em; 
 }
 
-.header-input-field { 
+.top-header-container-left > .header-input-field { 
     height: 2em; 
     width: 40em; 
     border-radius: 17px 20px 17px 20px;
@@ -197,7 +197,7 @@ footer {
 } 
 
 
-#header-top-glass-img { 
+.top-header-container-left > #header-top-glass-img { 
     width: 2em; 
     height: 2em; 
 } 
@@ -211,23 +211,23 @@ footer {
     margin-top: 1em; 
 }
 
-.top-right-header-img { 
+.top-header-container-right > .top-right-header-img { 
     height: 3em; 
     width: 3em; 
     border-radius: 50%;
 } 
 
-.top-right-header-bell-icon { 
+.top-header-container-right > .top-right-header-bell-icon { 
     width: 2em; 
     height: 2em; 
 } 
 
-.top-right-header-text { 
+.top-header-container-right > .top-right-header-text { 
     font-size: 1.49rem;
     font-family: 'Roboto';
 } 
 
-/* bottom header left code */
+/* bottom header left code */ 
 
 .bottom-header-container-left { 
     display: flex; 
@@ -237,19 +237,19 @@ footer {
 } 
 
 
-.bottom-left-header-img { 
+.bottom-header-container-left > .bottom-left-header-img { 
     height: 4.5em; 
     width: 4.5em; 
     border-radius: 50%;
 }  
 
-.bottom-header-text-1 { 
+.bottom-header-container-left .bottom-header-text-1 { 
     font-family: 'Roboto';
 }
 
-.bottom-header-text-2 { 
+.bottom-header-container-left .bottom-header-text-2 { 
     font-size: 1.49rem; 
-    font-family: 'Roboto';
+    font-family: 'Roboto'; 
 }  
 
 .bottom-header-right-container { 
