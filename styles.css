@@ -1,7 +1,13 @@
 * { 
     padding: 0; 
     margin: 0; 
-} 
+}  
+
+:root { 
+    --background-color-for-nav:  rgb(86, 179, 216);
+    --background-color-for-main-sidebar-footer: rgb(235, 224, 224); 
+
+}
 
 
 
@@ -49,29 +55,33 @@ header {
 main { 
     grid-area: main; 
     display: grid; 
-    /* grid-template-rows: 1fr 1fr;  */
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fill, 1fr);
-    background-color: rgb(235, 224, 224);
+    grid-template-rows: 1fr 1fr; 
+    /* grid-template-columns: repeat(auto-fill, 1fr); */
+    /* background-color: rgb(235, 224, 224);  */
+    background-color: var(--background-color-for-main-sidebar-footer); 
 } 
 
 sidebar { 
     grid-area: sidebar; 
     display: grid; 
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(235, 224, 224);
+    background-color: var(--background-color-for-main-sidebar-footer);
 } 
 
 footer { 
     grid-area: footer; 
-    background-color: rgb(235, 224, 224);
+    /* background-color: rgb(235, 224, 224); */ 
+    background-color: var(--background-color-for-main-sidebar-footer);
 }
 
 .nav-container { 
-    background-color: rgb(86, 179, 216); 
+    /* used css variable here, defined in root */
+    /* background-color: rgb(86, 179, 216);  */
+    background-color: var(--background-color-for-nav); 
     width: auto; 
     height: 100vh; 
 }  
+
 
 .nav-img-text-container { 
     display: flex; 
@@ -257,6 +267,8 @@ footer {
     padding: 2em;
     border-radius: 12%; 
     margin: 2em; 
+    grid-row: 1; 
+    grid-column: 1;
 }
 
 
