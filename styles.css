@@ -55,7 +55,8 @@ header {
 main { 
     grid-area: main; 
     display: grid; 
-    grid-template-rows: 2fr 2fr; 
+    grid-template-rows: 2.5fr 2.5fr 2.5fr;
+    grid-template-columns: 2fr 2fr;  
     /* grid-template-columns: repeat(auto-fill, 1fr); */
     /* background-color: rgb(235, 224, 224);  */
     background-color: var(--background-color-for-main-sidebar-footer); 
@@ -273,20 +274,22 @@ footer {
 
 /* main content section, card section begins here */ 
 
+/* card 1  */ 
 
-.main-card-1-header-text {  
-    grid-row: 1; 
-}
+.cards-main-content-container > .main-card-1-header-text {  
+     /* grid-row: 1;   */
+    text-decoration: underline; 
+ } 
 
-.card-1-main-content-container { 
-    grid-row: 1; 
-    grid-column: 1; 
-    display: grid; 
-    margin: 1em; 
-
+.cards-main-content-container { 
+    /* grid-row: 1; 
+    grid-column: 1;  */
+     display: grid; 
+     /* margin: 1em;  */
+    
 }  
 
-.card-1-main-content-container > .card-1-main-content { 
+.cards-main-content-container > .card-1-main-content { 
     display: grid;
     background-color: white;
     height: 20vh; 
@@ -294,33 +297,91 @@ footer {
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
+    justify-self: center;
+    align-self: center;
+    grid-row: 1; 
+    /* align-self: start; */
 } 
 
 
-.card-1-main-content > h5 { 
+.card-1-main-content > h5, 
+.card-2-main-content-container > h5, 
+.card-3-main-content-container > h5, 
+.card-4-main-content-container > h5 { 
     font-size: 1.2rem; 
-}
+} 
 
-.bottom-card-grid-container { 
+.bottom-card-grid-container, 
+.bottom-card-grid-container-2, 
+.bottom-card-grid-container-3, 
+.bottom-card-grid-container-4 { 
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr;  
     grid-column-gap: 1em; 
-    justify-content: end;
+    justify-content: end; 
     
-}
+} 
+
+/* card 2  */ 
 
 
-
-/* .card-1-main-content { 
+ .card-2-main-content-container { 
+    display: grid;
     background-color: white;
-    height: auto-fit; 
-    width: auto-fit; 
-    padding: 2em;
-    border-radius: 12%; 
-    margin: 2em; 
+    height: 22vh; 
+    width: 40vh; 
+    padding: 1em;  
+    border-radius: 10%; 
+    border-left-color: 1px solid orange; 
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    margin: 1em; 
     grid-row: 1; 
+} 
+
+ 
+
+
+
+
+
+/* card 3 experimental */ 
+
+.card-3-main-content-container { 
+    display: grid;
     grid-column: 1;
-}  */
+    grid-row: 2; 
+    background-color: white;
+    height: 20vh; 
+    width: 40vh; 
+    padding: 1em;  
+    border-radius: 10%; 
+    border-left-color: 1px solid orange; 
+    justify-self: center;
+    align-self: center;
+    margin: 1em; 
+ } 
+
+
+ /* card 4 */ 
+ 
+ .card-4-main-content-container { 
+    display: grid;
+    grid-column: 2;
+    grid-row: 2; 
+    background-color: white;
+    height: 20vh; 
+    width: 40vh; 
+    padding: 1em;  
+    border-radius: 10%; 
+    border-left-color: 1px solid orange; 
+    justify-self: center;
+    align-self: center;
+    margin: 1em; 
+ }
+
+
 
 
 
