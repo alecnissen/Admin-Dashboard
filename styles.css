@@ -36,13 +36,18 @@ body {
     "nav footer footer";
     grid-template-columns: 1.5fr 5fr 2fr;
     grid-template-rows: 2fr 5fr 1fr;
+    /* when commeting out rows, and columns, main content fits 
+    however left side nav bar is much larger */ 
+    /* grid-template-columns: 1.5fr 5fr 2fr;
+    grid-template-rows: 2fr 5fr 1fr; */
     height: 100vh;
+    width: 100vw; 
 } 
 
 
 nav { 
-    grid-area: nav; 
-    
+    grid-area: nav;  
+    height: 100vh; 
 }
 
 header { 
@@ -58,11 +63,15 @@ main {
     display: grid; 
     grid-template-rows: 2.5fr 2.5fr 2.5fr;
     grid-template-columns: 2fr 2fr;  
+
+    /* grid-template-rows: 4fr 4fr 4fr;
+    grid-template-columns: 4fr 4fr;  */
     /* grid-template-columns: repeat(auto-fill, 1fr); */
     /* background-color: rgb(235, 224, 224);  */
     background-color: var(--background-color-for-main-sidebar-footer); 
-    /* height: 100%; 
-    width: 100% */
+    /* height: 85vh;   */
+    /* height: 100vh;  */
+    grid-row-gap: 0.5em; 
 } 
 
 sidebar { 
@@ -73,7 +82,7 @@ sidebar {
 } 
 
 footer { 
-    grid-area: footer; 
+    grid-area: footer;   
     /* background-color: rgb(235, 224, 224); */ 
     background-color: var(--background-color-for-main-sidebar-footer);
 }
@@ -287,16 +296,19 @@ footer {
 .cards-main-content-container { 
     /* grid-row: 1; 
     grid-column: 1;  */
-     display: grid; 
-     /* margin: 1em;  */
+    display: grid;
+     /* display: flex;  
+     justify-content: center;  */
     
 }  
 
 .cards-main-content-container > .card-1-main-content { 
     display: grid;
     background-color: white;
-    height: 20vh; 
-    width: 40vh; 
+    /* height: 20vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
@@ -325,7 +337,7 @@ footer {
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr;  
     grid-column-gap: 1em; 
-    justify-content: end; 
+    justify-content: end;  
     
 } 
 
@@ -334,14 +346,19 @@ footer {
 
  .card-2-main-content-container { 
     display: grid;
+    /* display: flex; */
     background-color: white;
-    height: 22vh; 
-    width: 40vh; 
+    /* height: 22vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
     justify-self: center;
     align-self: center;
+    /* justify-content: center;
+    align-content: center; */
     grid-column: 2;
     /* margin: 1em;  */
     grid-row: 1; 
@@ -360,8 +377,10 @@ footer {
     grid-column: 1;
     grid-row: 2; 
     background-color: white;
-    height: 20vh; 
-    width: 40vh; 
+    /* height: 20vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
@@ -378,8 +397,10 @@ footer {
     grid-column: 2;
     grid-row: 2; 
     background-color: white;
-    height: 20vh; 
-    width: 40vh; 
+    /* height: 20vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
@@ -396,8 +417,10 @@ footer {
     grid-column: 1;
     grid-row: 3; 
     background-color: white;
-    height: 20vh; 
-    width: 40vh; 
+    /* height: 20vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
@@ -414,12 +437,68 @@ footer {
     grid-column: 2;
     grid-row: 3; 
     background-color: white;
-    height: 20vh; 
-    width: 40vh; 
+    /* height: 20vh; 
+    width: 40vh;  */
+    height: 17vh; 
+    width: 15vw;
     padding: 1em;  
     border-radius: 10%; 
     border-left-color: 1px solid orange; 
     justify-self: center;
     align-self: center;
     /* margin: 1em;  */
+} 
+
+/* sidebar content */ 
+
+/* sidebar { 
+    display: block;
+}  */
+
+sidebar > h3 { 
+    text-decoration: underline;
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+
+
+.sidebar-top-container { 
+    display: grid; 
+    grid-column: 1; 
+    grid-row: 1; 
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    width: auto; 
+    background-color: white;
+    margin: 1.3em; 
+    padding: 1em; 
+} 
+
+
+
+.sidebar-row-1 { 
+    margin: 1em; 
+}
+
+.sidebar-row-2 { 
+    display: grid;
+    grid-row: 2; 
+    margin: 1em; 
+} 
+
+.sidebar-row-3 { 
+    display: grid;
+    grid-row: 3; 
+    margin: 1em;    
+} 
+
+.trending-sidebar-header { 
+    grid-row: 2; 
+} 
+
+.sidebar-bottom-container > #little-lab-img { 
+    border-radius: 50%;
+    height: 4em; 
+    width: 4em; 
 }
