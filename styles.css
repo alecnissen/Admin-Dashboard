@@ -28,27 +28,28 @@ footer {
     border: 2px solid red; 
 }
 
+
 body { 
     display: grid; 
     grid-template-areas: 
     "nav header header"
     "nav main sidebar"
     "nav main sidebar"
-    "nav footer footer";
-    grid-template-columns: 1.5fr 5fr 2fr;
-    grid-template-rows: 2fr 5fr 1fr;
+    "nav footer footer"; 
+    grid-template-columns: 0.5fr 1.5fr .7fr;
+    grid-template-rows: 2fr 7fr 2fr;
     /* when commeting out rows, and columns, main content fits 
     however left side nav bar is much larger */ 
     /* grid-template-columns: 1.5fr 5fr 2fr;
     grid-template-rows: 2fr 5fr 1fr; */
     height: 100vh;
     width: 100vw; 
+    
 } 
 
 
 nav { 
-    grid-area: nav;  
-    /* height: 100vh;  */
+    grid-area: nav;    
 }
 
 header { 
@@ -269,8 +270,7 @@ footer {
 .bottom-header-right-container { 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly; 
 } 
 
 .bottom-header-right-container > button { 
@@ -481,12 +481,14 @@ sidebar > h3 {
 
 .sidebar-row-1 { 
     margin: 1em; 
+    border-bottom: 1px solid black;
 }
 
 .sidebar-row-2 { 
     display: grid;
     grid-row: 2; 
     margin: 1em; 
+    border-bottom: 1px solid black;
 } 
 
 .sidebar-row-3 { 
@@ -500,10 +502,33 @@ sidebar > h3 {
 } 
 
 .sidebar-bottom-container { 
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     grid-row: 2; 
     grid-column: 1; 
     background-color: white;
     margin: 1.3em; 
+    grid-gap: 1em; 
+} 
+
+.sidebar-bottom-inner-text-img-container { 
+    grid-row: 1; 
+    align-items: center;
+} 
+
+.sidebar-bottom-img-text-container-2 { 
+    grid-row: 2; 
+    align-items: center;
+} 
+
+.sidebar-bottom-img-text-container-3 { 
+    grid-row: 3; 
+    align-items: center;
+} 
+
+.sidebar-bottom-img-text-container-4 { 
+    grid-row: 4;
+    align-items: center;
 }
 
 
@@ -515,8 +540,7 @@ sidebar > h3 {
     height: 3.5em; 
     width: 3.5em;   
     display: block;
-    margin-left: 1em; 
-    /* grid-row: 2;  */
+    margin-left: 1em;  
 } 
 
 .sidebar-bottom-inner-text-img-container,
