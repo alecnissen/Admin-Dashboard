@@ -503,25 +503,31 @@ sidebar > h3 {
     grid-row: 2; 
     grid-column: 1; 
     background-color: white;
+    margin: 1.3em; 
 }
 
 
  #little-lab-img,
- #img-2-bottom-sidebar {  
+ #img-2-bottom-sidebar,
+ #img-3-bottom-sidebar, 
+ #img-4-bottom-sidebar {  
     border-radius: 50%;
     height: 3.5em; 
     width: 3.5em;   
     display: block;
+    margin-left: 1em; 
     /* grid-row: 2;  */
 } 
 
 .sidebar-bottom-inner-text-img-container,
-.sidebar-bottom-img-text-container-2 { 
+.sidebar-bottom-img-text-container-2, 
+.sidebar-bottom-img-text-container-3, 
+.sidebar-bottom-img-text-container-4 { 
     display: flex;
-    gap: 1em;
+    gap: 1em; 
 } 
 
- .sidebar-bottom-inner-text-img-container, .sidebar-bottom-img-text-container-2 > p { 
+ .sidebar-bottom-inner-text-img-container, .sidebar-bottom-img-text-container-2, .sidebar-bottom-img-text-container-3, .sidebar-bottom-img-text-container-4 > p { 
     display: flex;
     font-size: 1rem; 
     align-self: center;
