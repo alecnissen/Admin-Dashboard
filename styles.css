@@ -25,7 +25,7 @@ header,
 footer { 
     /* font-size: 3em;  */
     /* background-color: skyblue;   */
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
 }
 
 
@@ -36,8 +36,8 @@ body {
     "nav main sidebar"
     "nav main sidebar"
     "nav footer footer"; 
-    grid-template-columns: 0.5fr 1.3fr .7fr;
-    grid-template-rows: 2fr 7fr 2fr;
+    grid-template-columns: 0.5fr 1.3fr 0.7fr;
+    grid-template-rows: 2fr 8fr 2fr;
     /* when commeting out rows, and columns, main content fits 
     however left side nav bar is much larger */ 
     /* grid-template-columns: 1.5fr 5fr 2fr;
@@ -46,6 +46,8 @@ body {
     width: 100vw; 
     
 } 
+
+
 
 
 nav { 
@@ -60,23 +62,26 @@ header {
  
 } 
 
+
 main { 
     grid-area: main; 
-    display: grid; 
-    /* grid-template-rows: 2.5fr 2.5fr 2.5fr;
+    display: grid;  
+     /* grid-template-rows: 2.5fr 2.5fr 2.5fr;
     grid-template-columns: 2fr 2fr;   */
-
+    
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr;  
     background-color: var(--background-color-for-main-sidebar-footer); 
     /* height: 85vh;   */
     /* height: 100vh;  */
     /* grid-row-gap: 0.1em;  */
     grid-column-gap: 1em; 
     grid-row-gap: 1em; 
-    /* margin: 1.5em;  */
-    padding: 2em; 
+    /* margin: 1.5em;   */
+     padding: 2em; 
 } 
+
+
 
 sidebar { 
     grid-area: sidebar; 
@@ -282,7 +287,7 @@ footer {
     font-family: 'Roboto';
     font-size: 0.89rem;
     border-radius: 17px 20px 17px 20px;  
-    height: 4em; 
+    height: 3em; 
     width: 7em; 
     border: none; 
 } 
@@ -294,7 +299,9 @@ footer {
 .main-card-1-header-text { 
     display: flex;
     align-items: flex-start;
-}
+} 
+
+
 
 
 .cards-main-content-container { 
@@ -305,6 +312,8 @@ footer {
      justify-content: center;  */
     
 }  
+
+
 
 .cards-main-content-container > .card-1-main-content { 
     display: grid;
@@ -332,6 +341,9 @@ footer {
       border-left-style: solid; 
     border-left-color: orange; 
     border-left-width: 8px; 
+    /* width: 21em; 
+    display: flex;
+    justify-self: center; */ 
 }
 
 
@@ -474,6 +486,7 @@ sidebar > h3 {
     text-decoration: underline;
     grid-column: 1;
     grid-row: 1;  
+    text-align: center;
 }
 
 
@@ -482,12 +495,16 @@ sidebar > h3 {
     display: grid; 
     grid-column: 1; 
     grid-row: 1; 
-    width: auto; 
+    /* width: auto;  */
     background-color: white;
     margin: 1.3em; 
     padding: 0.3em; 
     margin-top: 2em; 
     border-radius: 10%; 
+    /*playing around with setting height/width of sidebar elements to make them fit better */
+    height: 19em; 
+    /* width: 25em;  */
+    text-align: center;
 } 
 
 
@@ -513,7 +530,8 @@ sidebar > h3 {
 .trending-sidebar-header { 
     grid-row: 2; 
     /* display: flex; 
-    justify-content: flex-start;  */  
+    justify-content: flex-start;  */
+    justify-self: center;  
 } 
 
 .sidebar-bottom-container { 
@@ -526,6 +544,9 @@ sidebar > h3 {
     grid-gap: 1em; 
     margin-top: 2em; 
     border-radius: 5%; 
+    height: 16em; 
+    width: 19em; 
+    justify-self: center;
 } 
 
 .sidebar-bottom-inner-text-img-container { 
@@ -554,10 +575,11 @@ sidebar > h3 {
  #img-3-bottom-sidebar, 
  #img-4-bottom-sidebar {  
     border-radius: 50%;
-    height: 3.5em; 
-    width: 3.5em;   
+    height: 3.2em; 
+    width: 3.2em;   
     display: block;
     margin-left: 1em;  
+    padding: 0.5px; 
 } 
 
 .sidebar-bottom-inner-text-img-container,
