@@ -44,14 +44,15 @@ body {
     grid-template-rows: 2fr 5fr 1fr; */
     height: 100vh;
     width: 100vw; 
- 
+    /* overflow: auto; */
+    /* background-color: gray; */
 } 
 
 
 
 
 nav { 
-    grid-area: nav;   
+    grid-area: nav;  
 }
 
 header { 
@@ -79,6 +80,7 @@ main {
     grid-row-gap: 1em; 
     /* margin: 1.5em;   */
      padding: 2em; 
+     /* overflow: auto; */
 } 
 
 
@@ -88,6 +90,7 @@ sidebar {
     display: grid; 
     grid-template-rows: 1fr 1fr;
     background-color: var(--background-color-for-main-sidebar-footer);
+    /* overflow: auto; */
 } 
 
 footer { 
@@ -349,6 +352,9 @@ footer {
     /* width: 21em; 
     display: flex;
     justify-self: center; */ 
+    /* width: 25em; 
+    height: 10em;  */
+    /* width: 10em;  */
 }
 
 
@@ -621,4 +627,70 @@ sidebar > h3 {
 }  
 
 
+/* advanced styling begins here */ 
 
+.home-img-and-text-container:hover,
+.profile-img-and-text-container:hover, 
+.messages-img-and-text-container:hover, 
+.history-img-and-text-container:hover, 
+.tasks-img-and-text-container:hover,
+.communities-img-and-text-container:hover, 
+.support-img-and-text-container:hover, 
+.privacy-img-and-text-container:hover, 
+.settings-img-and-text-container:hover
+ { 
+    text-decoration: underline;
+    color: white; 
+} 
+
+.card-1-main-content:hover, 
+.card-2-main-content-container:hover, 
+.card-3-main-content-container:hover, 
+.card-4-main-content-container:hover, 
+.card-5-main-content-container:hover, 
+.card-6-main-content-container:hover  { 
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.bottom-header-right-container > button:hover { 
+    color: white;
+    height: 4em; 
+} 
+
+ /* media queries for cards section  */
+
+ /* @media screen and (max-width: 300px) {
+    
+
+.card-1-main-content, 
+.card-2-main-content-container, 
+.card-3-main-content-container, 
+.card-4-main-content-container, 
+.card-5-main-content-container, 
+.card-6-main-content-container, 
+sidebar  { 
+
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    
+}
+
+
+}   */
+
+/* @media all and (max-width: 200px) { 
+    body { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr); 
+    }
+
+}  */ */
+
+
+/* grid-template-columns: 0.5fr 1.5fr 0.7fr;
+grid-template-rows: 2fr 8fr 2fr; */
